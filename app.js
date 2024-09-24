@@ -29,8 +29,8 @@ mongoose.connect(process.env.MONGO_URI, {
 });
 
 // Rutas de clientes
-const clientRoutes = require('./src/routes/clientRoutes');
-app.use('/api/clients', clientRoutes);
+const purchaseRoutes = require('./src/routes/purchaseRoutes');
+app.use('/api/purchase', purchaseRoutes);
 
 // Iniciar el servidor
 const PORT = process.env.PORT || 5000;
